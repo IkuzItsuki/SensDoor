@@ -32,6 +32,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 import com.zms.sensdoor.R
 import com.zms.sensdoor.ui.theme.darkGreen
 import com.zms.sensdoor.ui.theme.lightGreen
@@ -39,7 +40,7 @@ import com.zms.sensdoor.ui.theme.lightGreen
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun Home(
-
+    navController: NavController
 ) {
     Scaffold(
         topBar = {
@@ -68,7 +69,9 @@ fun Home(
                     icon = painterResource(id = R.drawable.ic_door),
                     title = "Hem",
                     isOpened = true,
-                    onClick = {}
+                    onClick = {
+                        navController.navigate("detail")
+                    }
                 )
             }
         }

@@ -16,7 +16,9 @@ import com.zms.sensdoor.ui.home.Home
 import com.zms.sensdoor.ui.setup.Setup
 import com.zms.sensdoor.ui.theme.SensDoorTheme
 import com.zms.sensdoor.ui.theme.seed
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

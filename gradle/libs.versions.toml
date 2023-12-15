@@ -17,6 +17,9 @@ hilt = "1.1.0"
 
 acompanist = "0.32.0"
 
+paho-mqtt = "1.1.0"
+paho = "1.1.1"
+
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -44,6 +47,9 @@ hilt-compiler = { group = "androidx.hilt", name = "hilt-compiler", version.ref =
 hilt-navigation = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hilt" }
 
 acompanist-systemuicontroller = { group = "com.google.accompanist", name = "accompanist-systemuicontroller", version.ref = "acompanist" }
+
+paho-mqtt = { group = "org.eclipse.paho", name = "org.eclipse.paho.client.mqttv3", version.ref = "paho-mqtt" }
+paho-mqtt-android = { group = "org.eclipse.paho", name = "org.eclipse.paho.android.service", version.ref = "paho" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
